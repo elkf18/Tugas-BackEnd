@@ -74,7 +74,7 @@
                             <small class="form-text text-danger"><?= form_error('foto_admin'); ?></small>
                         </div>
 
-                        <button type="submit" name="tambah" class="btn btn-primary float-right">Tambah Data</button>
+                        <button type="submit" name="tambah" class="btn btn-primary float-right" onclick="tambahData()">Tambah Data</button>
                     </form>
                     
                 </div>
@@ -88,4 +88,13 @@
 <script src="<?= base_url() ?>assets/plugin/ckeditor/ckeditor.js"></script>
 <script>
     CKEDITOR.replace('alamat_admin');
+</script>
+<script>
+    function tambahData() {
+        swal({
+            title: 'Data Admin',
+            text: 'Berhasil di tambah!',
+            type: "success"
+        })
+    }
 </script>
